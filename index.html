@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>A Ball</title>
+
+<script src="jquery-1.5.2.min.js"></script>
+<script src="ball.js"></script>
+
+<style>
+
+@viewport {
+  width: device-width;
+  orientation: portrait;
+}
+
+#board {
+	background-color: green;
+	height: 100%;
+	width: 100%;
+}
+
+#message {
+	background-color: white;
+}
+
+#create {
+	background-color: white;
+	float: right;
+}
+
+.ball {
+	background-color: yellow;
+	width: 30px;
+	height: 30px;			
+	border-radius: 15px;
+	text-align: center;
+	-webkit-border-radius: 25px;
+}
+
+.ball > .label {
+	vertical-align: middle;
+}
+
+</style>
+</head>
+
+<body onload="initGame();">
+
+<div id="board">
+	<button id="create" name="create">Create!</button>
+	<div id="message"/>
+</div>
+
+</body>
+</html>
